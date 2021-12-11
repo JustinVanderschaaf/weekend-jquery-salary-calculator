@@ -74,4 +74,10 @@ function onAddEmployee(event){
 
     let totalMonthly=Math.round((totalWages/12 + Number.EPSILON) * 100) / 100
     $('#totalMonthly').text(`${totalMonthly}`)
+    if(totalMonthly>20000){
+        $('footer').css({
+            "backgroundColor":"red"
+        }
+        )
+    }
 };

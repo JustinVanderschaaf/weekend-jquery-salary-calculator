@@ -21,9 +21,9 @@ Technical tasks
     [x]save employees to a global list
     [x]render the employee to the dom
     [x]clear input fields
-[]calculate monthly cost
-    []append monthly cost to the dom
-    []if cost exceeds 20,000 add a red background to monthly cost
+[x]calculate monthly cost
+    [x]append monthly cost to the dom
+    [x]if cost exceeds 20,000 add a red background to monthly cost
 [] Delete a employee from the list
     [x] Delete button + click event handler
     [x] Remove employee from the DOM
