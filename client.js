@@ -28,7 +28,7 @@ function onAddEmployee(event){
     let lastName = $('#lastNameInput').val();
     let id = $('#idInput').val();
     let title = $('#titleInput').val();
-    let annualSalary = $('#salaryInput').val();
+    let annualSalary = Number($('#salaryInput').val());
 
 
     //make employee object
@@ -64,9 +64,20 @@ function onAddEmployee(event){
                   </button>
             </td>
         </tr>`)
+       
     }
+    
+    //for (let i = 0; i < employees.length; i++) {
+       // element=0
+       // element += employees[i].annualSalary ;
+       
+       
+    //}
+    let totalWages = 0;
 
+    employees.forEach(employee => totalWages += employee.annualSalary);
+
+    console.log(totalWages);
 
 
 };
-    

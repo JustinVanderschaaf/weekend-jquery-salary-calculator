@@ -14,19 +14,20 @@ Technical tasks
     [x] doc.ready
 [x]Wireframe
 [x]HTML mockup
-[]Add employee to my list
-    []form with first name,last name,ID number, job title, annual salary.
-    []add a button + event handler
-    []grab data from <inputs>,and save as an object
-    []save employees to a global list
-    []render the employee to the dom
-    []clear input fields
+[x]Add employee to my list
+    [x]form with first name,last name,ID number, job title, annual salary.
+    [x]add a button + event handler
+    [x]grab data from <inputs>,and save as an object
+    [x]save employees to a global list
+    [x]render the employee to the dom
+    [x]clear input fields
 []calculate monthly cost
     []append monthly cost to the dom
     []if cost exceeds 20,000 add a red background to monthly cost
 [] Delete a employee from the list
-    [] Delete button + click event handler
-    [] Remove employee from the DOM
+    [x] Delete button + click event handler
+    [x] Remove employee from the DOM
+    [] Remove employee from the array
 []styling
     [x] gray header with white letters
     [x]center header with no margin on sides
