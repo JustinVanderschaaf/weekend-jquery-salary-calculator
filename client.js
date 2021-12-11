@@ -3,10 +3,19 @@ $(document).ready(onReady);
 let employees = []
 
 function onReady() {
-    console.log('in JQ');
+    //handle new employee form submit
     $('#employeeForm').on('submit', onAddEmployee);
+
+    // Handle delete employee button
+    //$('.deleteBtn').on('click', onDeleteProduct);
+    $(document).on('click', '.deleteBtn', onDeleteEmployee);
 }
-console.log('in JS');
+
+function onDeleteEmployee() {
+    console.log('👋 onDeleteEmployee');
+
+    $(this).parents('tr').remove();
+}
 
 function onAddEmployee(event){
     //prevent from reloading page
