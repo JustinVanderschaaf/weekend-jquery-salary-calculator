@@ -72,6 +72,6 @@ function onAddEmployee(event){
     let totalWages = 0;
     employees.forEach(employee => totalWages += employee.annualSalary);
 
-    let totalMonthly=totalWages/12
+    let totalMonthly=Math.round((totalWages/12 + Number.EPSILON) * 100) / 100
     $('#totalMonthly').text(`${totalMonthly}`)
 };
