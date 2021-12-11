@@ -1,7 +1,7 @@
 - add employee to list
 -calculate month cost
 -see the list of employees
--warn if monthy cost exceeds 20,000
+-warn if monthly cost exceeds 20,000
 -delete employees form dom
 
 Technical tasks
@@ -13,7 +13,7 @@ Technical tasks
     [x] javascript script.js
     [x] doc.ready
 [x]Wireframe
-[]HTML mockup
+[x]HTML mockup
 []Add employee to my list
     []form with first name,last name,ID number, job title, annual salary.
     []add a button + event handler
