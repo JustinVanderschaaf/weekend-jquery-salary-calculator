@@ -66,18 +66,12 @@ function onAddEmployee(event){
         </tr>`)
        
     }
-    
-    //for (let i = 0; i < employees.length; i++) {
-       // element=0
-       // element += employees[i].annualSalary ;
-       
-       
-    //}
+    //add up total wages of employees
+    //divide by 12
+    //display to dom
     let totalWages = 0;
-
     employees.forEach(employee => totalWages += employee.annualSalary);
 
-    console.log(totalWages);
-
-
+    let totalMonthly=totalWages/12
+    $('#totalMonthly').append(`${totalMonthly}`)
 };
