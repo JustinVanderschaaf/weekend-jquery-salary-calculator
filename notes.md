@@ -24,10 +24,9 @@ Technical tasks
 [x]calculate monthly cost
     [x]append monthly cost to the dom
     [x]if cost exceeds 20,000 add a red background to monthly cost
-[] Delete a employee from the list
+[x] Delete a employee from the list
     [x] Delete button + click event handler
     [x] Remove employee from the DOM
-    [] Remove employee from the array
 []styling
     [x] gray header with white letters
     [x]center header with no margin on sides
@@ -38,3 +37,10 @@ Technical tasks
     []table that alternates lines between white and gray
     []gray delete buttons
     [] Total Monthly cost in bottom right of dom with $$ and change
+
+
+
+[]stretch
+    [] Add themed styling
+    [] Remove employee from the array
+    [] update total cost when employee is deleted .text()/.data
