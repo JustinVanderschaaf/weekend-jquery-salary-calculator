@@ -7,3 +7,6 @@ header{
 body{
     margin: 0px;
 }
+.submitButton{
+    background-color: lightgray;
+}

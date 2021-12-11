@@ -11,9 +11,90 @@
 </head>
 <header><h1>Salary Calculator</h1></header>
 <body>
-
+    <h2>Add Emplyee</h2>
+    <form id="emplyeeForm">
+        <!-- first name input -->
+        <input 
+            id="nameInput"
+            type="text"
+            placeholder="First Name"
+        />
+        <!-- last name input -->
+        <input 
+            id="lastNameInput"
+            type="text"
+            placeholder="Last Name"
+        />
+        <!-- id number input -->
+        <input 
+            id="idInput"
+            type="text"
+            placeholder="ID Number"
+        />
+        <!-- job title input -->
+        <input 
+            id="titleInput"
+            type="text"
+            placeholder="Job Title"
+        />
+        <!-- annual salary input -->
+        <input 
+            id="salaryInput"
+            type="text"
+            placeholder="Salary"
+        />
+        
+    </form>
+    <input class="submitButton"
+        type="submit"
+        value="Submit"
+    />
+    <h2>Employees</h2>
+    <table class="container table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID Number</th>
+                <th>Job Title</th>
+                <th>Annual Salary</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="employeeList">
+            <tr>
+                <td>bob</td>
+                <td>crawford</td>
+                <td>100342</td>
+                <td>coworker</td>
+                <td>$45000</td>
+                <td>
+                    <button class="deleteBtn">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Eric</td>
+                <td>shwap</td>
+                <td>87587</td>
+                <td>Manager</td>
+                <td>$63,232</td>
+                <td>
+                    <button class="deleteBtn">
+                        Delete
+                    </button>
+                </td>
+                
+            </tr>
+            
+        </tbody>
+        
+    </table>
+    <tfoot></tfoot>
 
 
     <script src="client.js" charset="utf-8"></script>
 </body>
+<footer>Total Monthly:<span class="totalMonthly"></span></footer>
 </html>
