@@ -73,5 +73,5 @@ function onAddEmployee(event){
     employees.forEach(employee => totalWages += employee.annualSalary);
 
     let totalMonthly=totalWages/12
-    $('#totalMonthly').append(`${totalMonthly}`)
+    $('#totalMonthly').text(`${totalMonthly}`)
 };
