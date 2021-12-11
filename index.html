@@ -12,43 +12,50 @@
 <header><h1>Salary Calculator</h1></header>
 <body>
     <h2>Add Emplyee</h2>
-    <form id="emplyeeForm">
+    <form id="employeeForm" class="container form-group">
         <!-- first name input -->
         <input 
+            class="form-control"
             id="nameInput"
             type="text"
             placeholder="First Name"
         />
         <!-- last name input -->
         <input 
+            class="form-control"
             id="lastNameInput"
             type="text"
             placeholder="Last Name"
         />
         <!-- id number input -->
         <input 
+            class="form-control"
             id="idInput"
             type="text"
             placeholder="ID Number"
         />
         <!-- job title input -->
-        <input 
+        <input
+            class="form-control"
             id="titleInput"
             type="text"
             placeholder="Job Title"
         />
         <!-- annual salary input -->
         <input 
+            class="form-control"
             id="salaryInput"
             type="number"
             placeholder="Salary"
         />
-        
-    </form>
-    <input class="submitButton"
+
+        <input class="submitButton"
+        class="form-control"
         type="submit"
-        value="Submit"
+        value="Add Employee"
     />
+    </form>
+    
     <h2>Employees</h2>
     <table class="container table">
         <thead>
