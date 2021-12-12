@@ -33,10 +33,9 @@ Technical tasks
     []Add Employee above buttons left justified but not against edge
     []5buttons in a line with padding between them
     []submit button right justified light gray and border-radius rounded
-    []Employees written above table
-    []table that alternates lines between white and gray
-    []gray delete buttons
-    [] Total Monthly cost in bottom right of dom with $$ and change
+    [x]Employees written above table
+    [x]gray delete buttons
+    [x] Total Monthly cost in bottom right of dom with $ and change
 
 
 

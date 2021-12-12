@@ -1,109 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salary Calculator</title>
     <script src="jquery.js" charset="utf-8"></script>
-    <link rel="stylesheet" type="text/css" href="main.css"/>
-    
-</head>
-<header><h1>Salary Calculator</h1></header>
-<body>
-    <h2>Add Emplyee</h2>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <header><h1>Salary Calculator</h1></header>
+  <body>
+    <h2>Add Employee</h2>
     <form id="employeeForm" class="container form-group">
-        <!-- first name input -->
-        <input 
-            class="form-control"
-            id="nameInput"
-            type="text"
-            placeholder="First Name"
-        />
-        <!-- last name input -->
-        <input 
-            class="form-control"
-            id="lastNameInput"
-            type="text"
-            placeholder="Last Name"
-        />
-        <!-- id number input -->
-        <input 
-            class="form-control"
-            id="idInput"
-            type="text"
-            placeholder="ID Number"
-        />
-        <!-- job title input -->
-        <input
-            class="form-control"
-            id="titleInput"
-            type="text"
-            placeholder="Job Title"
-        />
-        <!-- annual salary input -->
-        <input 
-            class="form-control"
-            id="salaryInput"
-            type="number"
-            placeholder="Salary"
-            step="any"
-            min="0"
-        />
+      <!-- first name input -->
+      <input
+        class="form-control"
+        id="nameInput"
+        type="text"
+        placeholder="First Name"
+      />
+      <!-- last name input -->
+      <input
+        class="form-control"
+        id="lastNameInput"
+        type="text"
+        placeholder="Last Name"
+      />
+      <!-- id number input -->
+      <input
+        class="form-control"
+        id="idInput"
+        type="text"
+        placeholder="ID Number"
+      />
+      <!-- job title input -->
+      <input
+        class="form-control"
+        id="titleInput"
+        type="text"
+        placeholder="Job Title"
+      />
+      <!-- annual salary input -->
+      <input
+        class="form-control"
+        id="salaryInput"
+        type="number"
+        placeholder="Salary"
+        step="any"
+        min="0"
+      />
 
-        <input class="submitButton"
+      <input
+        class="submitButton"
         class="form-control"
         type="submit"
         value="Add Employee"
-    />
+      />
     </form>
-    
+
     <h2>Employees</h2>
-    <table class="container table">
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>ID Number</th>
-                <th>Job Title</th>
-                <th>Annual Salary</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody id="employeeList">
-            <tr>
-                <td>bob</td>
-                <td>crawford</td>
-                <td>100342</td>
-                <td>coworker</td>
-                <td>$45000</td>
-                <td>
-                    <button class="deleteBtn">
-                        Delete
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>Eric</td>
-                <td>shwap</td>
-                <td>87587</td>
-                <td>Manager</td>
-                <td>$63,232</td>
-                <td>
-                    <button class="deleteBtn">
-                        Delete
-                    </button>
-                </td>
-                
-            </tr>
-            
-        </tbody>
-        
+    <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID Number</th>
+          <th>Job Title</th>
+          <th>Annual Salary</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="employeeList">
+        <tr>
+          <td>bob</td>
+          <td>crawford</td>
+          <td>100342</td>
+          <td>coworker</td>
+          <td>$45000</td>
+          <td>
+            <button class="deleteBtn">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Eric</td>
+          <td>shwap</td>
+          <td>87587</td>
+          <td>Manager</td>
+          <td>$63,232</td>
+          <td>
+            <button class="deleteBtn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
     </table>
     <tfoot></tfoot>
 
-
     <script src="client.js" charset="utf-8"></script>
-</body>
-<footer>Total Monthly: $<span id="totalMonthly"></span></footer>
+  </body>
+  <footer>Total Monthly: $<span id="totalMonthly"></span></footer>
 </html>
