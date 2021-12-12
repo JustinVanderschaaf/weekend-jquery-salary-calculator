@@ -8,27 +8,13 @@ function onReady() {
 
   // Handle delete employee button
   $(document).on("click", ".deleteBtn", onDeleteEmployee);
-}//end onReady
+} //end onReady
 
-function onDeleteEmployee() {
-    let employeeId = $(this).closest("tr").attr("id");
-    console.log(employeeId);
-    console.log(employees);
-    //WTF??
-   for(let i = 0; i < employees.length; i++){
-       if(employees[i].id == employeeId){
-        employees.splice(i, 1);
-       }
-   }
-   
-   
-    console.log(employees);
-  $(this).parents("tr").remove();
-  calculateTotal();
-}// end delete employee
-
-function calculateTotal(){
-    let totalWages = 0;
+//add up total wages of employees
+//divide by 12
+//display to dom
+function calculateTotal() {
+  let totalWages = 0;
   employees.forEach((employee) => (totalWages += employee.annualSalary));
 
   let totalMonthly = Math.round((totalWages / 12 + Number.EPSILON) * 100) / 100;
@@ -39,6 +25,17 @@ function calculateTotal(){
     });
   }
 }
+
+function onDeleteEmployee() {
+  let employeeId = $(this).closest("tr").attr("id");
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i].id == employeeId) {
+      employees.splice(i, 1);
+    }
+  }
+  $(this).parents("tr").remove();
+  calculateTotal();
+} // end delete employee
 
 function onAddEmployee(event) {
   //prevent from reloading page
@@ -92,12 +89,8 @@ function onAddEmployee(event) {
                   </button>
             </td>
         </tr>`);
-  }//end employee loop
-  
-  //add up total wages of employees
-  //divide by 12
-  //display to dom
+  } //end employee loop
+
   calculateTotal();
-  
-}//end addEmployee
+} //end addEmployee
 $("#nameInput").val("");
