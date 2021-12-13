@@ -1,8 +1,11 @@
 Salary Calculator
 
+Is app calculates monthly employee salaries. It has input fields for first, last name, job title ,employee id and salaries. This app stores the data locally.
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+- add employee to a list
+- calculate month cost
+- see the list of employees displayed on the DOM
+- warn if monthly cost exceeds 20,000 and turn background red
+- delete employees fromm dom/employee list upon click of a button
