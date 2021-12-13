@@ -23,6 +23,10 @@ function calculateTotal() {
     $("footer").css({
       backgroundColor: "red",
     });
+  }else{
+    $("footer").css({
+      backgroundColor: "#95b2e6",
+    });
   }
 }
 
