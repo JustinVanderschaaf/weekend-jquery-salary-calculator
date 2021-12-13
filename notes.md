@@ -31,8 +31,8 @@ Technical tasks
     [x] gray header with white letters
     [x]center header with no margin on sides
     []Add Employee above buttons left justified but not against edge
-    []5buttons in a line with padding between them
-    []submit button right justified light gray and border-radius rounded
+    [5]5buttons in a line with padding between them
+    [5]submit button right justified light gray and border-radius rounded
     [x]Employees written above table
     [x]gray delete buttons
     [x] Total Monthly cost in bottom right of dom with $ and change
@@ -40,6 +40,6 @@ Technical tasks
 
 
 []stretch
-    [] Add themed styling
-    [] Remove employee from the array
-    [] update total cost when employee is deleted .text()/.data
+    [5] Add themed styling
+    [5] Remove employee from the array
+    [5] update total cost when employee is deleted .text()/.data
